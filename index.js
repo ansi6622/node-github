@@ -627,6 +627,8 @@ var Client = module.exports = function(config) {
                 }
                 else if (paramName !== 'path')
                     val = encodeURIComponent(msg[paramName]);
+                else
+                    val = msg[paramName];
             }
             else
                 val = msg[paramName];
